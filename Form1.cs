@@ -21,5 +21,11 @@ namespace Activity1
         {
             MessageBox.Show("Hello World!");
         }
+
+        private void Label1_Click(object sender, EventArgs e)
+        {
+            lblButtonPurpose.Text = "Hello World!";
+            lblButtonPurpose.Refresh();
+        }
     }
 }
