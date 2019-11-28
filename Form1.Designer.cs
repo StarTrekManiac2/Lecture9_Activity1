@@ -28,13 +28,34 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.btnContinue = new System.Windows.Forms.Button();
+            this.SuspendLayout();
+            // 
+            // btnContinue
+            // 
+            this.btnContinue.Location = new System.Drawing.Point(89, 75);
+            this.btnContinue.Name = "btnContinue";
+            this.btnContinue.Size = new System.Drawing.Size(150, 43);
+            this.btnContinue.TabIndex = 0;
+            this.btnContinue.Text = "Continue";
+            this.btnContinue.UseVisualStyleBackColor = true;
+            this.btnContinue.Click += new System.EventHandler(this.Button1_Click);
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            this.ClientSize = new System.Drawing.Size(324, 209);
+            this.Controls.Add(this.btnContinue);
+            this.Name = "Form1";
+            this.Text = "Activity 1 - Button & Message";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Button btnContinue;
     }
 }
 
